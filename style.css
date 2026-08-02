@@ -1061,7 +1061,9 @@ footer .mono {
         border-top: 4px solid #888;
     }
     .live-banner .num {
-        color: #fff !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
     }
     .exhibit:hover {
         transform: none !important;

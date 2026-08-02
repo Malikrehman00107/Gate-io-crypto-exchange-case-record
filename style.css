@@ -437,6 +437,9 @@ main {
     letter-spacing: -0.02em;
     flex-shrink: 0;
     min-width: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 .live-banner .txt {
     font-family: "IBM Plex Mono", monospace;
@@ -545,6 +548,15 @@ main {
     margin-top: 4px;
     line-height: 1.4;
 }
+
+/* BNB icon in fact strip */
+.bnb-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .coin-badge {
     display: inline-flex;
     align-items: center;
@@ -1061,9 +1073,7 @@ footer .mono {
         border-top: 4px solid #888;
     }
     .live-banner .num {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        max-width: 100%;
+        color: #fff !important;
     }
     .exhibit:hover {
         transform: none !important;

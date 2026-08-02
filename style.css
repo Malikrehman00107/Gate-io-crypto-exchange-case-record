@@ -558,6 +558,9 @@ main {
     flex-shrink: 0;
 }
 
+/* ============================================================
+   BADGES
+   ============================================================ */
 .coin-badge {
     display: inline-flex;
     align-items: center;
@@ -577,35 +580,12 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--crimson);
-    font-size: 18px;
-    margin-right: 4px;
-}
-    /* ... rest of styles ... */
-}
-
-.coin-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: var(--gold);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 700;
-    font-family: "IBM Plex Mono", monospace;
     flex-shrink: 0;
-}
-.warn-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 24px;
     height: 24px;
     color: var(--crimson);
-    flex-shrink: 0;
+    font-size: 18px;
+    margin-right: 4px;
 }
 
 /* ============================================================

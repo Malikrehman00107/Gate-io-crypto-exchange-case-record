@@ -558,6 +558,13 @@ main {
     flex-shrink: 0;
 }
 
+/* Match the "BNB" text below the number */
+.bnb-text {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--navy);
+}
 /* ============================================================
    BADGES
    ============================================================ */

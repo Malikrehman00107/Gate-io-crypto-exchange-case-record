@@ -530,14 +530,39 @@ main {
         border-top: 4px solid var(--amber) !important;
     }
 }
+
+/* --- FIXED FACT STRIP LAYOUT --- */
 .fact .n {
-    font-family: "Fraunces", serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--navy);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 14px;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.fact .n .n-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fact .n .n-stack .n-val {
+    font-family: "Fraunces", serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+}
+.fact .n .n-stack .n-ticker {
+    font-family: "Fraunces", serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2px;
+}
+.bnb-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: block;
 }
 .fact .l {
     font-family: "IBM Plex Mono", monospace;
@@ -545,26 +570,10 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--ink-faint);
-    margin-top: 4px;
     line-height: 1.4;
-}
-/* BNB icon */
-.bnb-icon {
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 6px;
-    flex-shrink: 0;
+    margin-top: 2px;
 }
 
-/* Match the "BNB" text below the number */
-.bnb-text {
-    font-family: "Fraunces", Georgia, serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--navy);
-}
 /* ============================================================
    BADGES
    ============================================================ */
@@ -582,7 +591,6 @@ main {
     font-family: "IBM Plex Mono", monospace;
     flex-shrink: 0;
 }
-
 .warn-badge {
     display: inline-flex;
     align-items: center;
